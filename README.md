@@ -1,5 +1,5 @@
 # Sms.Bomber
-Hunter
+Sms.Bomber.Hunter
 
 `pkg install git`
 
